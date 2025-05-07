@@ -1,15 +1,17 @@
-# Ignorer node_modules og build-filer
-node_modules
-build
-dist
+# React (client)
+client/node_modules
+client/build
+client/dist
+client/.env
 
-# Ignorer miljøfiler
-.env
+# .NET (server)
+server/bin
+server/obj
+server/*.user
+server/*.suo
 
-# Ignorer OS- og editorfiler
-.DS_Store
+# Generelt
 *.log
-
-# Ignorer test coverage og Next.js
+.DS_Store
 coverage
 .next
