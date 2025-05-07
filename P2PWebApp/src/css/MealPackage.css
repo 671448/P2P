@@ -1,0 +1,91 @@
+/* Styling for wrapper og meal-package */
+.meal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.meal-package {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 20px; /* Avstand til knappene */
+}
+
+.meal-package-message {
+  display: flex;
+  align-items: center;
+}
+
+.meal-package-message span:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #0a1d3f;
+  padding-bottom: 2px;
+  color: #0a1d3f;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 5px; /* Litt avstand fra "Meal Package" */
+  cursor: pointer;
+}
+
+.info-icon img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.meal-package-price {
+  display: flex;
+}
+
+.meal-package-price span {
+  font-size: 1.5rem; /* Større font for å matche skjermbildet */
+  font-weight: bold;
+  color: #0a1d3f;
+}
+
+/* Styling for knappene */
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.accept {
+  background-color: #0a1d3f;
+  border: none;
+  color: white; /* Endret fra grønn til hvit */
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.reject {
+  background-color: white;
+  color: #0a1d3f;
+  border: none;
+  box-shadow: inset 0 0 0 1px #0a1d3f; /* Indre kantlinje */
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  max-width: 20rem;
+}

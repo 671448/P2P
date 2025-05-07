@@ -1,0 +1,23 @@
+form {
+  display: flex; /* Legg til flex for å sikre vertikal stabling av input */
+  flex-direction: column; /* Stabler inputfeltene vertikalt */
+  align-items: center; /* Sentraliserer inputfeltene */
+}
+
+input {
+  margin-bottom: 16px;
+  width: 320px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Sørger for vertikal stabling */
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
+  padding: 20px;
+}

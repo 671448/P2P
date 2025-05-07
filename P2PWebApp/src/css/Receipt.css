@@ -1,0 +1,171 @@
+/* ReceiptPage.css - More compressed two-column layout */
+.receipt-section {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: calc(max(12dvh, 4rem) + 6rem); /* Reduced top margin */
+  padding: 0 20px 50px; /* Reduced side and bottom padding */
+}
+
+.receipt-title {
+  font-size: 1.3rem; /* Smaller title */
+  font-weight: 600;
+  margin-bottom: 1rem; /* Reduced margin */
+  color: #0a1d3f;
+}
+
+.receipt-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem; /* Reduced padding */
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+/* Route display with arrow - more compact */
+.route-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem; /* Reduced margin */
+  padding: 0.8rem; /* Reduced padding */
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.port {
+  text-align: center;
+  flex: 1;
+}
+
+.port-name {
+  font-size: 1.1rem; /* Smaller font */
+  font-weight: 600;
+  color: #0a1d3f;
+}
+
+.port-date {
+  font-size: 0.8rem; /* Smaller font */
+  color: #666;
+  margin-top: 0.2rem; /* Reduced margin */
+}
+
+.arrow {
+  margin: 0 0.8rem; /* Reduced margin */
+  color: #0a1d3f;
+  font-size: 1.3rem; /* Smaller arrow */
+}
+
+/* Two-column layout container - tighter */
+.two-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Reduced gap */
+  margin-top: 1rem; /* Reduced margin */
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Detail sections - more compact */
+.detail-group {
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.detail-heading {
+  font-size: 0.9rem; /* Smaller font */
+  font-weight: 600;
+  margin-bottom: 0.4rem; /* Reduced margin */
+  color: #0a1d3f;
+  padding-bottom: 0.2rem; /* Reduced padding */
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem; /* Reduced margin */
+  font-size: 0.8rem; /* Smaller font */
+}
+
+.detail-label {
+  color: #666;
+}
+
+.detail-value {
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Passengers section - more compact */
+.passengers-group {
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.passenger-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem; /* Reduced margin */
+  padding-bottom: 0.3rem; /* Reduced padding */
+  border-bottom: 1px solid #eee;
+}
+
+.passenger-row:last-child {
+  border-bottom: none;
+}
+
+.passenger-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.passenger-name {
+  font-weight: 500;
+  font-size: 0.8rem; /* Smaller font */
+}
+
+.passenger-info {
+  font-size: 0.7rem; /* Smaller font */
+  color: #666;
+}
+
+/* Price summary - more compact */
+.price-summary {
+  margin-top: 0;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem; /* Reduced margin */
+  font-size: 0.8rem; /* Smaller font */
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem; /* Reduced margin */
+  padding-top: 0.6rem; /* Reduced padding */
+  border-top: 1px solid #eee;
+  font-weight: 600;
+  font-size: 0.9rem; /* Smaller font */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .receipt-section {
+    margin-top: calc(max(12dvh, 4rem) + 2.5rem);
+    padding: 0 12px 30px;
+  }
+
+  .two-column-layout {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .column {
+    width: 100%;
+  }
+}

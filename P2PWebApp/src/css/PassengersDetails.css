@@ -1,0 +1,261 @@
+/* PassengersDetails.css - Two-column layout for all screen sizes */
+.passenger-details-section {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: calc(max(12dvh, 4rem) + 7rem); /* Reduced top margin */
+  padding: 0 25px 60px; /* Reduced bottom padding */
+}
+
+/* Passenger selector at top */
+.passenger-selector {
+  width: 100%;
+  margin-bottom: 20px; /* Reduced margin */
+  display: flex;
+  align-items: center;
+}
+
+.passenger-selector-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 12px;
+  color: #333;
+}
+
+.passenger-buttons {
+  display: flex;
+  gap: 8px; /* Reduced gap */
+  flex-wrap: wrap;
+}
+
+.passenger-buttons button {
+  padding: 6px 12px; /* Smaller padding */
+  border-radius: 4px;
+  font-size: 13px; /* Smaller font */
+  cursor: pointer;
+  background-color: #f2f3f5;
+  border: 1px solid transparent;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.passenger-buttons button.active {
+  background-color: #0a1d3f;
+  color: white;
+}
+
+.passenger-buttons button:hover:not(.active) {
+  background-color: #e5e7eb;
+}
+
+/* More compact form */
+.form-row {
+  display: flex;
+  margin-bottom: 10px; /* Reduced margin */
+  flex-wrap: wrap;
+  gap: 16px; /* Reduced gap */
+}
+
+/* Each form group takes up half the space */
+.form-group {
+  flex: 0 0 calc(50% - 8px); /* Adjusted for smaller gap */
+  display: flex;
+  flex-direction: column;
+}
+
+/* For the last odd item, allow it to take full width if needed */
+.form-group.full-width {
+  flex: 0 0 100%;
+}
+
+.label-column {
+  margin-bottom: 6px; /* Reduced margin */
+  font-size: 13px; /* Smaller font */
+  color: #333;
+  font-weight: 500;
+}
+
+.input-column {
+  width: 100%;
+}
+
+.input-column input[type='text'],
+.input-column input[type='email'] {
+  width: 100%;
+  height: 42px; /* Reduced height */
+  padding: 0 12px; /* Reduced padding */
+  background-color: #f2f3f5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 13px; /* Smaller font */
+}
+
+.input-column input:focus {
+  outline: none;
+  border-color: #101e3b;
+}
+
+/* Radio button styling */
+.radio-group {
+  display: flex;
+  gap: 20px; /* Reduced gap */
+  background-color: #f2f3f5;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0 12px; /* Reduced padding */
+  height: 42px; /* Reduced height */
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 42px; /* Reduced height */
+}
+
+.radio-group input[type='radio'] {
+  margin-right: 6px; /* Reduced margin */
+  width: 14px; /* Smaller size */
+  height: 14px; /* Smaller size */
+  cursor: pointer;
+}
+
+.radio-group span {
+  font-size: 13px; /* Smaller font */
+  color: #333;
+}
+
+/* Country code input */
+.country-code-input {
+  max-width: 100% !important;
+}
+
+/* Responsive design - maintain two columns on mobile */
+@media (max-width: 768px) {
+  .passenger-details-section {
+    margin-top: calc(max(12dvh, 4rem) + 2.5rem);
+    padding: 0 15px 40px;
+  }
+
+  /* Keep the two-column layout but with smaller spacing */
+  .form-row {
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .form-group {
+    flex: 0 0 calc(50% - 4px); /* Adjusted for smaller gap */
+  }
+
+  .label-column {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .radio-group {
+    padding: 0 8px;
+    height: 40px;
+    gap: 8px;
+  }
+
+  .radio-group label {
+    height: 40px;
+  }
+
+  .input-column input[type='text'],
+  .input-column input[type='email'] {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  /* Improve passenger selector for mobile */
+  .passenger-selector {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .passenger-selector-label {
+    margin-bottom: 6px;
+    margin-right: 0;
+  }
+
+  .passenger-buttons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Prevent text overflow in radio buttons on small screens */
+  .radio-group {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .radio-group label {
+    flex: 0 1 auto;
+  }
+
+  .radio-group span {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .passenger-details-section {
+    margin-top: calc(max(12dvh, 4rem) + 2rem);
+    padding: 0 10px 30px;
+  }
+
+  /* Maintain two columns with minimal spacing */
+  .form-row {
+    margin-bottom: 6px;
+    gap: 6px;
+  }
+
+  .form-group {
+    flex: 0 0 calc(50% - 3px); /* Adjusted for smaller gap */
+  }
+
+  .input-column input[type='text'],
+  .input-column input[type='email'],
+  .radio-group,
+  .radio-group label {
+    height: 38px;
+  }
+
+  .passenger-buttons button {
+    padding: 4px 8px;
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .label-column {
+    font-size: 11px;
+  }
+
+  .input-column input[type='text'],
+  .input-column input[type='email'] {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  /* Optimize radio group for very small screens */
+  .radio-group {
+    padding: 0 6px;
+    gap: 6px;
+  }
+
+  .radio-group span {
+    font-size: 11px;
+  }
+
+  .radio-group input[type='radio'] {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+  }
+}

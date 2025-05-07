@@ -1,0 +1,48 @@
+.year-month-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-year {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+.calendar-year button {
+  width: 5rem;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #d7d0be;
+  border-radius: 5px;
+}
+
+.calendar-year button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.calendar-month {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.month {
+  padding: 1rem 1rem;
+  width: 8.5rem;
+  border-radius: 16px;
+  text-align: center;
+}
+.month:hover {
+  background-color: #efeff2;
+}
+.month.selected {
+  background-color: #d7d0be;
+}

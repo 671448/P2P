@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff; /* Hvit bakgrunn */
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+@media (max-width: 1024px) {
+  html,
+  body {
+    overflow: hidden; /* Fjerner scroll-funksjon på mobil/nettbrett */
+    height: 100%;
+  }
+}
