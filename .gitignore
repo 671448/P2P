@@ -1,0 +1,15 @@
+# Ignorer node_modules og build-filer
+node_modules
+build
+dist
+
+# Ignorer miljøfiler
+.env
+
+# Ignorer OS- og editorfiler
+.DS_Store
+*.log
+
+# Ignorer test coverage og Next.js
+coverage
+.next
